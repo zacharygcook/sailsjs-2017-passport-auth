@@ -29,6 +29,10 @@ module.exports = {
 				}
 			});
 
+			console.log("Got down here to the end of function 'login' at AuthController");
+
+			res.redirect('/post');
+
 		})(req, res); // Posted stackoverflow question about this (req, res) at the end: 
 		// https://stackoverflow.com/questions/45899685/what-does-the-last-parenthetical-on-something-like-functionreq-res-me
 		// TODO: Rewrite in an easier to understand way
