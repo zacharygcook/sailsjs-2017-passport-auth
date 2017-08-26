@@ -12,7 +12,7 @@ module.exports = {
   attributes: {
   	email: { type: 'email', required: true, unique: true },
   	password: { type: 'string', minLength: 6, required: true },
-  }
+  },
 
   beforeCreate: function (user, cb) {
   	bcrypt.genSalt(10, function (err, salt) {
