@@ -1,0 +1,10 @@
+{
+  "name": "sailsjs-2017-passport-auth",
+  "private": false,
+  "version": "0.1.0",
+  "description": "SailsJS 2017 Passport Authentication example",
+  "dependencies": {
+    "sails": "^0.12.13"
+  },
+  "author": "zacharygcook"
+}
