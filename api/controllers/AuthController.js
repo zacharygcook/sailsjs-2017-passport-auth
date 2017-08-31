@@ -33,8 +33,8 @@ module.exports = {
 
 			res.redirect('/post');
 
-		})(req, res); // Posted stackoverflow question about this (req, res) at the end: 
-		// https://stackoverflow.com/questions/45899685/what-does-the-last-parenthetical-on-something-like-functionreq-res-me
+		})(req, res); // Called an Immediately-Invoked Function Expression - executes immediately after creation
+		// https://stackoverflow.com/questions/8228281/what-is-the-function-construct-in-javascript
 		// TODO: Rewrite in an easier to understand way
 
 	},

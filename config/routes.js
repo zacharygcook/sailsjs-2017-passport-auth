@@ -53,6 +53,9 @@ module.exports.routes = {
 
   'GET /signup': {
     view: 'signup'
-  }
+  },
+
+  'GET /user': 'UserController.all',
+  'POST /user': 'UserController.create'
 
 };
