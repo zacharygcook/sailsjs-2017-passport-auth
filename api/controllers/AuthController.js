@@ -13,7 +13,7 @@ module.exports = {
 		passport.authenticate('local', function (err, user, info) {
 			if ((err) || (!user)) {
 				// If error or user object not passed back
-				return res.send({
+				return res.status(401).send({
 					message: info.message,
 					user: user
 				});
@@ -22,7 +22,7 @@ module.exports = {
 			// req.login() is a passport method available within request handlers
 			req.logIn(user, function (err) {
 				if (err) {
-					res.send({
+					res.status(401).send({
 						message: info.message,
 						user: user
 					});
